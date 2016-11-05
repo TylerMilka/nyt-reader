@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-		<script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="mythyme.js"></script>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <script type="text/javascript" src="backend.js"></script>
 </head>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-
-				<h1 class="Heading"> New York Times Search </h1>
-			</div>
-		</div>
-
-
-		<div class="row">
-			<div class="col-md-12">
-				<h3> Search Parameters </h3>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<span id="searchterm">
-							Search Term:
-							</span>
-						</div>
-					</div>
-					<div class="row">
-					<input id = "searchterm">
-					</div>
-					</div>
-					<div class="row">
-					Number of Records to Retrieve:
-
-
-			</div>
-		</div>
-
-
-				
-		
-
-	
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="Heading"> New York Times Search </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3> Search Parameters </h3>
+                <div class="container">
+                    <div class="row">
+                    	Search Term:
+                        <input id="search-term">
+                    </div>
+                    <div class="row">
+                        Number of Records to Retrieve:
+                        <input id="number-records">
+                    </div>
+                    <div class="row">
+                        Begin year:
+                        <input id="begin-year">
+                    </div>
+                    <div class="row">
+                        End year:
+                        <input id="end-year">
+                    </div>
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
